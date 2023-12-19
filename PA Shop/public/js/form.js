@@ -1,5 +1,3 @@
-
-
 let formBtn = document.querySelector('.submit-btn');
 let loader = document.querySelector('.loading');
 formBtn.addEventListener('click', () => {
@@ -32,14 +30,57 @@ formBtn.addEventListener('click', () => {
     } else {
         if(!email.value.length  || !password.value.length) {
             showFormError('fill all the inputs')
-        } else {
-            loader.style.display = 'block';
-            sentDAta('/login', {
-                
-                email:email.value,
-                password: password.value,
-            })
         }
     }
-    
 });
+function saveData() {
+    let name,email,password,phoneNumber;
+    name= document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    password = document.getElementById("password").value;
+    phoneNumber = document.getElementById("number").value;
+    // localStorage.setItem("name",name);
+    // localStorage.setItem("email",email);
+    // localStorage.setItem("password",password);
+    // localStorage.setItem("phoneNumber",phoneNumber);
+    let user_records = new Array();
+    user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    if(user_records.some((v)=> {
+        return v.email==email;
+    })){
+        alert("this email already exist");
+    } else {
+        user_records.push({"name":name,"email":email,"password":password,"phoneNumber":phoneNumber});
+        localStorage.setItem("users",JSON.stringify(user_records));
+        alert("return to Login")
+    }   
+}
+function saveLoginData() {
+    let email,password,a;
+   
+    email = document.getElementById("email").value;
+    password = document.getElementById("password").value;
+
+    a = document.querySelector('.homeroute')
+    // localStorage.setItem("name",name);
+    // localStorage.setItem("email",email);
+    // localStorage.setItem("password",password);
+    // localStorage.setItem("phoneNumber",phoneNumber);
+    let user_records = new Array();
+    user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    if(user_records.some((v)=> {
+        return v.email==email && v.password == password;
+    })){
+        alert("login successfull");
+        let current_user = user_records.filter((v)=>{
+            return v.email==email && v.password ==password;
+        })[0]
+        localStorage.setItem("name",current_user.name);
+        localStorage.setItem("email",current_user.email);
+        window.location.href = "index.html";
+        console.log(window.location.href);
+    } else {
+        alert('login fail');
+    }
+    
+}

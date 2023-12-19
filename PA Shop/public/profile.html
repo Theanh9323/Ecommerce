@@ -13,19 +13,19 @@
 <body>
     <nav class="navbar bg">
         <div>
-            <img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt="">
+            <a href="index.html"><img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt=""></a>
         </div>
         <ul class="links-container"> 
-            <li class="link-item"><a class="link active" href="#">Home</a></li>
-            <li class="link-item"><a class="link" href="search.html">Product</a></li>
-            <li class="link-item"><a class="link" href="#">About</a></li>
-            <li class="link-item"><a class="link" href="#">Contact</a></li>
+            <li class="link-item"><a class="link active" href="index.html">Home</a></li>
+            <li class="link-item"><a class="link" href="ListProduct.html">Product</a></li>
+            <li class="link-item"><a class="link" href="about.html">About</a></li>
+            <li class="link-item"><a class="link" href="contact.html">Contact</a></li>
         </ul>
         <div class="user-interaction">
-            <div class="cart">
-                <img src="img/cart.png" class="cart-icon" alt="">
-                <span class="cart-item-count">00</span>
-            </div>
+            <div class="iconShopping">
+				<a href="cart.html"><img class="cart-icon" src="img/cart.png" alt=""></a>
+				<p class="cart-item-count">0</p>
+			</div>
             <div class="user">
                 <img src="img/user.png"  class="user-icon" alt="">
                 <div class="user-icon-popup">
@@ -35,13 +35,14 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="content">
         <div class="profile-box">
             <div><img src="img/319160218_697704381920276_6542664574382122778_n.jpg" class="user-profile" alt=""><br></div>
             
             <div class="info-profile">
-                <label for="" class="name">The Anh</label><br>
-                <label for="" class="email">then77366@gmail.com</label>
+                <label for="" class="name"></label><br>
+                <label for="" class="email"></label>
+                <label for="" class="number"></label>
             </div>
             <div class="usercontact">
                 <a href="https://www.facebook.com/profile.php?id=100083273132934"><img src="img/facebook.png" alt="" class="user-contact"></a>
@@ -49,5 +50,49 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="js/profile.js"></script>
 </body>
 </html>

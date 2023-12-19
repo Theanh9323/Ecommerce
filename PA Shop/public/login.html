@@ -15,6 +15,7 @@
     <div>
         <img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt="">
     </div>
+    
     <section class="form-section">
        
         <div class="form-container">
@@ -22,19 +23,20 @@
             <div class="form">
                 <h1 class="form-heading">welcome back, login here</h1>
                 
-                <input type="text" autocomplete="off" id="name" placeholder="full name">
+                <!-- <input type="text" autocomplete="off" id="name" placeholder="full name"> -->
                 <input type="text" autocomplete="off" id="email" placeholder="email">
                 <input type="password" autocomplete="off" id="password" placeholder="password">
-                <input type="number" autocomplete="off" id="number" placeholder="phone number">
+                <!-- <input type="number" autocomplete="off" id="number" placeholder="phone number"> -->
                 <span class="error">**this is an error</span>
                 
-                <button class="submit-btn">Login</button>
-                <a href="/signup" class="other-form-link">Don't have an account, Create one</a>
+                <button class="submit-btn" onclick="saveLoginData() ">Login</button>
+                <a href="signup.html" class="other-form-link">Don't have an account, Create one</a>
             </div>
             
         </div>
     </section>
-    <script src="js/common.js"></script>
+
+    
     <script src="js/form.js"></script>
 </body>
 </html>

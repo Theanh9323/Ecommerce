@@ -24,3 +24,5 @@ collageIage.map((item,i) => {
         })
     })
 })
+
+

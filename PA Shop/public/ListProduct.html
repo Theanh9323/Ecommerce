@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
+	<title>
+		shopping cart with javascript using local storage -- fullyworld web tutorials
+	</title>
+	<link rel="stylesheet" href="css/ListProduct.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script>
+	</script>
+</head>
+<body>
+	<nav class="navbar bg">
+        <div>
+            <a href="index.html"><img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt=""></a>
+        </div>
+        <ul class="links-container"> 
+            <li class="link-item"><a class="link active" href="index.html">Home</a></li>
+            <li class="link-item"><a class="link" href="ListProduct.html">Product</a></li>
+            <li class="link-item"><a class="link" href="about.html">About</a></li>
+            <li class="link-item"><a class="link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="user-interaction">
+            <div class="iconShopping">
+				<a href="cart.html"><img class="cart-icon" src="img/cart.png" alt=""></a>
+				<p class="cart-item-count">0</p>
+			</div>
+            <div class="user">
+                <img src="img/user.png"  class="user-icon" alt="">
+                <div class="user-icon-popup">
+                    <a href="profile.html">Profile</a>
+                    <a href="login.html">Login</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+	<div class="main">
+		<div class="itemsBox">
+			<div class="item">
+				<img src="img/sofa-1.png" alt="Men's Solid Regular Fit T-Shirt"/>
+				<div class="itemInfo">
+					<h1>Men's Solid Regular Fit T-Shirt</h1>
+					<p>$<span>42.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-2.png"/>
+				<div class="itemInfo">
+					<h1>SARAF SURGEON MASK SET OF 5</h1>
+					<p>$<span>15.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-4.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-5.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-6.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-7.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-8.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sofa-9.png"/>
+				<div class="itemInfo">
+					<h1>Men's Black Footwear UK</h1>
+					<p>$<span>100.50</span></p>
+					<a href="#" title="add to cart" class="attToCart">Add to cart</a>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>company</h4>
+						<ul>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">our services</a></li>
+							<li><a href="#">privacy policy</a></li>
+							<li><a href="#">affiliate program</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>get help</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">shipping</a></li>
+							<li><a href="#">returns</a></li>
+							<li><a href="#">order status</a></li>
+							<li><a href="#">payment options</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>online shop</h4>
+						<ul>
+							<li><a href="#">watch</a></li>
+							<li><a href="#">bag</a></li>
+							<li><a href="#">shoes</a></li>
+							<li><a href="#">dress</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	   </footer>
+	</div>
+	<div class="cartBox">
+		<div class="cart">
+			<i class="fa fa-close"></i>
+			<h1>Cart</h1>
+			<table></table>
+		</div>
+	</div>
+	
+
+
+	<!-- script -->
+	<script src="js/nav.js" ></script>
+    <script src="js/home.js"></script>
+	<script src="js/ListProduct.js"></script>
+</body>
+</html>

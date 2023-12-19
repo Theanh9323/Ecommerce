@@ -9,23 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
+    
+    
 </head>
 <body>
     <nav class="navbar bg">
         <div>
-            <img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt="">
+            <a href="index.html"><img src="img/1640869756664-Thiết kế không tên - 2021-12-30T200910.614.png" class="logo" alt=""></a>
         </div>
         <ul class="links-container"> 
-            <li class="link-item"><a class="link active" href="#">Home</a></li>
-            <li class="link-item"><a class="link" href="search.html">Product</a></li>
-            <li class="link-item"><a class="link" href="#">About</a></li>
-            <li class="link-item"><a class="link" href="#">Contact</a></li>
+            <li class="link-item"><a class="link active" href="index.html">Home</a></li>
+            <li class="link-item"><a class="link" href="ListProduct.html">Product</a></li>
+            <li class="link-item"><a class="link" href="about.html">About</a></li>
+            <li class="link-item"><a class="link" href="contact.html">Contact</a></li>
         </ul>
         <div class="user-interaction">
-            <div class="cart">
-                <img src="img/cart.png" class="cart-icon" alt="">
-                <span class="cart-item-count">00</span>
-            </div>
+            <div class="iconShopping">
+				<a href="cart.html"><img class="cart-icon" src="img/cart.png" alt=""></a>
+				<p class="cart-item-count">0</p>
+			</div>
             <div class="user">
                 <img src="img/user.png"  class="user-icon" alt="">
                 <div class="user-icon-popup">
@@ -38,51 +40,60 @@
     <div class="cart-section">
         <div class="product-list">
             <p class="section-heading">Your card</p>
-            <div class="cart-container">
-                <img src="" alt="">
-                <div class="sm-proudct">
-                    <img src="img/sofa-4.png" class="sm-product-img" alt="">
-                    <div class="sm-text">
-                        <p class="sm-product-name">Product</p>
-                        <p class="sm-des">short des</p>
-                    </div>
-                    <div class="item-counter">
-                        <button class="counter-btn decrement">-</button>
-                        <input type="text" name=""  class="item-count" id="" value="1">
-                        <button class="counter-btn increment">+</button>
-                    </div>
-                    <p class="sm-price">$299</p>
-                    <button class="sm-delete-btn"><img src="img/delete.png" alt=""></button>
-                </div>
-            </div>
-            <div class="cart-container">
-                <img src="" alt="">
-                <div class="sm-proudct">
-                    <img src="img/sofa-1.png" class="sm-product-img" alt="">
-                    <div class="sm-text">
-                        <p class="sm-product-name">Product</p>
-                        <p class="sm-des">short des</p>
-                    </div>
-                    <div class="item-counter">
-                        <button class="counter-btn decrement">-</button>
-                        <input type="text" name=""  class="item-count" id="" value="1">
-                        <button class="counter-btn increment">+</button>
-                    </div>
-                    <p class="sm-price">$299</p>
-                    <button class="sm-delete-btn"><img src="img/delete.png" alt=""></button>
-                </div>
-            </div>
+            
         </div>
         <div class="checkout-section">
             <div class="checkout-box">
-                <p class="text">your total bill</p>
-                <h1 class="bill">$00</h1>
-                <a href="/checkout" class="checkout-btn">Checkout</a>
+                <a class="checkout-btn">Checkout</a>
             </div>
         </div>
     </div>
-    <script src="js/nav.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <script src="js/nav.js" ></script>
     <script src="js/home.js"></script>
-    <script src="js/cart.js"></script>
+   <script src="js/cart.js"></script>
+   <script src="js/ListProduct.js"></script>
 </body>
 </html>

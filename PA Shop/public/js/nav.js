@@ -14,7 +14,10 @@ let userPopupIcon = document.querySelector('.user-icon-popup');
 useIcon.addEventListener('click',function () {
     userPopupIcon.classList.toggle('active');
 });
-
+function LogOut() {
+    localStorage.removeItem("name");
+    localStorage.removeItem("email");
+}
 
 
 
